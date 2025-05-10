@@ -264,7 +264,7 @@ def analyze_image(image_path):
     # Сегментация изображения
     bbox = segment_image(image)
     if bbox is None:
-        return None, None, None, None  # Возвращаем None, если лицо не найдено
+        return None, None, None, None, None  # Возвращаем None, если лицо не найдено
 
     # Получаем результаты
     background_status = check_blur(image)
